@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/topFrame" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<ViewFlipper android:id="@+id/startupImageFlipper"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:autoStart="true" android:flipInterval="2000">
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:scaleType="centerInside"
+			android:background="@drawable/startbackground2"></ImageView>
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:scaleType="centerInside"
+			android:background="@drawable/startbackground2"></ImageView>
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:scaleType="centerInside"
+			android:background="@drawable/startbackground3"></ImageView>
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:scaleType="centerInside"
+			android:background="@drawable/startbackground3"></ImageView>
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:scaleType="centerInside"
+			android:background="@drawable/startbackground4"></ImageView>
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:scaleType="centerInside"
+			android:background="@drawable/startbackground5"></ImageView>
+	</ViewFlipper>
+
+	<ImageSwitcher android:id="@+id/imageSwitcher"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<ImageView android:id="@+id/imgShow" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:scaleType="centerInside"
+			android:hapticFeedbackEnabled="true">
+		</ImageView>
+	</ImageSwitcher>
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/HorizontalButtonLayout" android:layout_width="fill_parent"
+		android:orientation="horizontal" android:layout_height="wrap_content"
+		android:layout_gravity="bottom" android:focusableInTouchMode="false"
+		android:paddingBottom="10sp" android:paddingLeft="10sp"
+		android:paddingRight="10sp">
+
+		<ImageButton android:id="@+id/prevImgBtn"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/previmgbtn_states"
+			android:hapticFeedbackEnabled="true" android:focusableInTouchMode="false"
+			android:layout_alignParentLeft="true">
+		</ImageButton>
+
+		<ImageButton android:id="@+id/bookmarkImgBtn"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/bookmarkbtn_states"
+			android:hapticFeedbackEnabled="true" android:focusableInTouchMode="false"
+			android:layout_toRightOf="@+id/prevImgBtn"
+			android:layout_marginRight="10sp" android:layout_marginLeft="20sp">
+		</ImageButton>
+
+		<ImageButton android:id="@+id/saveImgBtn"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/savebtn_states"
+			android:hapticFeedbackEnabled="true" android:focusableInTouchMode="false"
+			android:layout_toLeftOf="@+id/nextImgBtn" android:layout_marginLeft="10sp" android:layout_marginRight="20sp">
+		</ImageButton>
+
+		<ImageButton android:id="@+id/nextImgBtn"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:background="@drawable/nextimgbtn_states"
+			android:hapticFeedbackEnabled="true" android:focusableInTouchMode="false"
+			android:layout_alignParentRight="true">
+		</ImageButton>
+
+	</RelativeLayout>
+
+</FrameLayout>
+
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent"> -->
+<!-- <EditText android:layout_height="wrap_content" android:id="@+id/inputURL" 
+	android:text="Input URL" android:textSize="18sp" android:layout_width="150sp" 
+	android:layout_weight="1" android:inputType="text"></EditText> -->
+
+<!-- </LinearLayout> -->
